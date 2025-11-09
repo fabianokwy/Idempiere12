@@ -1,42 +1,129 @@
+# ==============================
+# 🧩 iDempiere 12 LTS / Maven / Eclipse
+# Fabiano Gomes - PRODEXA / Economizar MT Edition
+# ==============================
+
+# 🔧 Maven build directories
+target/
 **/target/
-**/bin/
-**/lib/*.jar
-**/seed/*.jar
+
+# 🔧 Eclipse / IDE
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+tmp/
+workspace/
+RemoteSystemsTempFiles/
+.recommenders/
+.factorypath
+.idea/
+out/
+.vscode/
+.history/
+*.iml
+*.code-workspace
+
+# 🔧 NetBeans / IntelliJ
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# 🧱 iDempiere generated content
+logs/
+log/
+reports/
+run/
+data/
+results/
+local-maven-repo/
+utils_dev/
+*.bak
+*.tmp
+*.log
+partial-runtime/
+runtime-*.app/
+runtime-server.product/
+jettyhome/
+
+# 💾 Base dumps e seeds
 org.adempiere.server-feature/data/seed/Adempiere.dmp
 org.adempiere.server-feature/data/seed/Adempiere_pg.dmp
 org.adempiere.server-feature/data/seed/Adempiere.log
-/org.adempiere.ui.zk/labelapplet.jar
-/org.adempiere.extend/test.properties
+org.adempiere.ui.zk/labelapplet.jar
+org.adempiere.extend/test.properties
 
-/.metadata/
-/PostgreSQL/
-/Oracle/
-/log/
-/*.log
-/.idpass
-/idempiere.properties
-/idempiereEnv.properties
-/hazelcast.xml
+# 🧩 LBR (Localização Brasileira)
+org.idempierelbr.nfe/xml/
+org.idempierelbr.nfe/logs/
+org.idempierelbr.nfs/xml/
+org.idempierelbr.sped/output/
+org.idempierelbr.core/tmp/
+org.idempierelbr.base/tmp/
+org.idempierelbr.cnab240/**/*.ret
+org.idempierelbr.cnab240/**/*.rem
 
+# 🔐 Sensitive / Environment
+.env
+idempiere.properties
+idempiereEnv.properties
+hazelcast.xml
+.idpass
+config.properties
+application.properties
+*.key
+*.pem
+*.crt
+*.pfx
+
+# 🧰 Build/Packaging artifacts
+**/lib/*.jar
+**/seed/*.jar
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+
+# 🧪 Tests & Coverage
+test-output/
+surefire-reports/
+jacoco.exec
+coverage/
+*.lcov
+
+# 🧮 Database dumps
+*.sql
+*.db
+*.sqlite
+
+# 🧱 OS / System
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+._*
+*.swp
+*.swo
+$RECYCLE.BIN/
+*.lnk
+
+# 🧩 Launchers / Dev scripts
 swingclient.product*.launch
 server.product*.launch
+RUN_ImportIdempiereDev.sh
+RUN_SyncDBDev.sh
+RUN_DBImport.sh
+RUN_Server2.sh
 
-/RemoteSystemsTempFiles/
-External Plug-in Libraries
-.recommenders
-
-/runtime-server.product/
-/jettyhome/
-
-/org.idempiere.javadoc/API
-/.sonarlint/
+# 🧩 Sonar / Analysis Tools
+.sonarlint/
 **/org.sonarlint.eclipse.core.prefs
-/runtime-*.app/
-org.idempiere.maven.to.p2/org.idempiere.webservice.client/.settings/
-**/org.eclipse.jdt.core.prefs
 .idea/**/Partial_*.xml
-out/
-.idea/*
-*/.maven.run/**
-**/.idea/*
-partial-runtime/
