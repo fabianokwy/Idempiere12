@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iDempiereLBR Base
+Bundle-SymbolicName: org.idempierelbr.base
+Bundle-Version: 12.0.0.qualifier
+Bundle-Activator: org.idempierelbr.base.Activator
+Require-Bundle: org.adempiere.base,
+ org.adempiere.plugin.utils,
+ org.eclipse.osgi
+Bundle-ClassPath: .
+Import-Package: org.osgi.service.event;version="1.3.0",
+ org.joda.time,
+ org.joda.time.format
+Export-Package: org.idempierelbr.base.model,
+ org.idempierelbr.base.service,
+ org.idempierelbr.base.util,
+ org.idempierelbr.base.wrapper
+Bundle-ActivationPolicy: lazy
